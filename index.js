@@ -10,18 +10,18 @@ const cliente2 = new Cliente();
     cliente2.cpf = 88822233309;
 
 const contaCorrenteRicardo = new ContaCorrente();
- 
  contaCorrenteRicardo.Agencia = 1001;
  contaCorrenteRicardo.cliente = cliente1;
  contaCorrenteRicardo.depositar(500);
- console.log(contaCorrenteRicardo);
 
 const conta2 = new ContaCorrente();
-conta2.cliente = cliente2;
-conta2.Agencia = 102;
-contaCorrenteRicardo.transferir(200, conta2)
+conta2.cliente = cliente1;
+conta2.agencia = 102;
 
-console.log(conta2);
+let valor = 200;
+contaCorrenteRicardo.transferir(valor, conta2);
+console.log(conta2)
+
 
 
 
